@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Claim_Approver_Assistant_Agent_1</members>
+		<name>AiAuthoringBundle</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ApprovalProcess</name>
+	</types>
+	<types>
+		<members>AgentAction_SendToWhatsApp</members>
+		<members>Assign_claim_owner_based_on_estimate_amount</members>
+		<members>Warranty_Validation_Flow</members>
+		<name>Flow</name>
+	</types>
+	<version>66.0</version>
+</Package>

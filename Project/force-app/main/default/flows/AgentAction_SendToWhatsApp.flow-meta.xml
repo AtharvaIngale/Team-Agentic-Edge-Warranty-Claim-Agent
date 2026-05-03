@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Send_WhatsApp_Message</name>
+        <label>Send WhatsApp Message</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <actionName>WhatsAppOutboundService</actionName>
+        <actionType>apex</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>claimId</name>
+            <value>
+                <elementReference>v_ClaimId</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>messageContent</name>
+            <value>
+                <elementReference>v_MessageContent</elementReference>
+            </value>
+        </inputParameters>
+        <nameSegment>WhatsAppOutboundService</nameSegment>
+        <offset>0</offset>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <environments>Default</environments>
+    <interviewLabel>AgentAction_SendToWhatsApp {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>AgentAction_SendToWhatsApp</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Send_WhatsApp_Message</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Claim record id</description>
+        <name>v_ClaimId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Message content</description>
+        <name>v_MessageContent</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>status of message</description>
+        <name>v_Status</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>
