@@ -66,4 +66,4 @@ Deploy the following Flows:
 6. **Approve:** Click the *Review Claim* button in Slack, select *Approve*, and verify the final confirmation message (with Auth Code) is sent back via WhatsApp.
 
 ---
-*Built for Hackthon by team Agentic Edge*
+*Built for Hackathon by team Agentic Edge*
